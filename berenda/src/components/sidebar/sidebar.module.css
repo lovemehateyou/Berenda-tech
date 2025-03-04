@@ -24,7 +24,7 @@
     color: white;
     font-size: 3rem;
     margin-left: 20px;
-    line-height: 1.5;
+    line-height: 0.9;
     transition: 0.3s;
 }
 .on{
@@ -33,7 +33,7 @@
     font-size: 3rem;
     transform: scaleX(5); 
     margin-left: 20px;
-    line-height: 1.5;
+    line-height: 0.9;
     transition: 0.3s;
 }
 
