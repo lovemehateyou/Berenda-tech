@@ -1,6 +1,6 @@
 .sidebar {
     width: 80px; 
-    background-color: black;
+    background-color: transparent;
     color: white;
     height: 100vh;
     position: fixed;
@@ -31,7 +31,7 @@
     text-decoration: none;
     color: white;
     font-size: 3rem;
-    transform: scaleX(5); 
+    transform: scaleX(7);
     margin-left: 20px;
     line-height: 0.9;
     transition: 0.3s;

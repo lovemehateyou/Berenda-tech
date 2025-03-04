@@ -12,3 +12,28 @@ font-family: "Cormorant Garamond", serif;
   font-style: normal;
 }
 
+
+
+/* Base switch styling */
+.custom-switch {
+  width: 50px !important;
+  height: 24px !important;
+  /* border: 2px solid white !important; */
+  background-color: black !important;
+}
+
+/* Default state: black background, white handle */
+.custom-switch .ant-switch-handle::before {
+  background-color: white !important;
+}
+
+/* Active state: white background, black handle */
+.custom-switch.checked {
+  background-color: white !important;
+}
+
+.custom-switch.checked .ant-switch-handle::before {
+  background-color: black !important;
+}
+
+

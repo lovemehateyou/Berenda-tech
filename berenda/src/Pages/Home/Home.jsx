@@ -2,7 +2,7 @@ import React,{useRef,useEffect,useState} from 'react'
 import ScrollReveal from "scrollreveal";
 import styles from './home.module.css'
 import { gsap } from "gsap";
-import {Switch} from 'antd'
+import {Switch, ConfigProvider} from 'antd'
 
 
 /* Images for home  */
@@ -48,6 +48,8 @@ const sr = ScrollReveal({
   });
 
 sr.reveal(".left", { interval: 200 });
+
+
 
 
   return (
@@ -116,17 +118,16 @@ sr.reveal(".left", { interval: 200 });
                 style={{
                     transition: 'transform 0.5s ease-in-out',
                     transform: ison ? 'translateY(210px)' : 'translateY(0px)', 
-                    position: ison? 'fixed' : 'relative',
                     zIndex: ison ? 100 : 0,
-                    top: ison ? '50%' : 'auto',
-                    left:ison ? '50%' : 'auto',
                   }}
                 >
                     <Switch 
                     onChange={()=>{
-                        seton((prev) => !prev)
+                    seton((prev) => !prev)
                     }}
+                    className={`custom-switch ${ison ? "checked" : ""}`}
                     />
+
                 </div>
 
 

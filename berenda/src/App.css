@@ -4,12 +4,9 @@
   }
 
 .main-content {
-    flex: 1; /* Takes up the remaining space */
-    margin-left: 50px;
+    flex: 1;
+    
   }
-.content{
-  flex: 1;
-}
 html {
     scroll-behavior: smooth;
   }

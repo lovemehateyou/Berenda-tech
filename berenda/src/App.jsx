@@ -24,7 +24,7 @@ const [ison,seton] = useState(false)
     <Router>
     <div className="app-container">
       <Sidebar ison={ison} /> 
-      <div className={ison ? "main-content" : "content"}>
+      <div className={"main-content"}>
       <Routes>
         <Route path="/" element={<Home ison={ison} seton={seton} />}/>
 {/*     <Route path ="/projects" element={<Projects/>}/>       
