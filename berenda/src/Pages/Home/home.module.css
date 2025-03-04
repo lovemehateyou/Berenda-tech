@@ -1,0 +1,307 @@
+
+.Hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.intro{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+}
+
+.intro h1 {
+    color: white;
+    font-size: 5.5rem;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 1;
+    
+}
+.thinking{
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%); 
+    transition: clip-path 0.8s ease-in-out;
+}
+
+.design{
+    padding-left: 2em;
+    font-size: 9rem;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%); 
+    transition: clip-path 0.8s ease-in-out;
+}
+.think{
+    font-size: 4rem;
+    margin-right: 150px;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%); 
+    transition: clip-path 0.8s ease-in-out;
+}
+
+.transition{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    z-index: 50;
+}
+
+.hero_container{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    padding: 1rem 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+}
+
+.bulb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bulb_text{
+    width:50%;
+    color: white;
+    flex-direction: column;
+}
+.bulb_text img{
+    width: 120px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.bulb_text h1{
+    font-size: 4.1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+.bulb_text p{
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    width: 80%;
+    line-height: 1.3;
+}
+.para{
+   margin-left: 60px;
+   margin-bottom: 10px;
+   width: 100%;
+}
+strong{
+font-size: 1.5rem;
+width: 100%;
+}
+
+
+.bulb_img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    color: white;
+}
+
+.bulb_img h2{
+    font-size: 3rem;
+    text-align: end;
+}
+
+.aboutus{
+    background: url('../../assets/Home/Core values.png') no-repeat center center/cover;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    padding: 4rem;
+}
+.us{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.about_img{
+    width: 120px;
+    height: 50px;
+    align-self: flex-start;
+}
+
+.about_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.about_text{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 50px;
+    width: 50%;
+}
+
+.mission{
+    grid-column: 1;
+    grid-row: 1;
+    color: white;
+}
+
+.mission h5{
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.mission p{
+    font-weight: 400;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+
+.vision{
+    grid-column: 2;
+    grid-row: 2;
+    color: white;
+    
+}
+.vision h5{
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.vision p{
+    font-weight: 400;
+    letter-spacing: 1px;
+    width: 90%;   
+}
+
+.corevalues{
+    background: url('../../assets/Home/Core.png') no-repeat center center/cover;
+    background-color: black;
+    height: auto;
+    width: 100%;
+    padding: 2rem 5rem 0rem;
+}
+.corevalues img{
+    width: 120px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+.corevalues h1{
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.corevalues p{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    margin-bottom: 50px;
+}
+
+.values1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.work h6, .connection h6, .integrating h6{
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.work p, .connection p, .integrating p{
+    font-size: .9rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    width: 70%;
+}
+
+.values2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 10px;
+    padding: 0px 5rem;
+}
+.usefull,.give_back{
+    width: fit-content;
+}
+
+
+.usefull h6, .give_back h6{
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+.usefull p, .give_back p{
+    font-size: .9rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    width: 60%;
+}
+
+.values_text{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+}
+.values_text p{
+    width: 40%;
+}
+
+.values1 div , .values2 div, .values_text {
+    animation: shake 0.4s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-1px); /* move left */
+    }
+    50% {
+      transform: translateX(1px); /* move right */
+    }
+    75% {
+      transform: translateX(-1px); /* move left */
+    }
+    100% {
+      transform: translateX(0px); /* move right */
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
