@@ -52,7 +52,7 @@ sr.reveal(".left", { interval: 200 });
 
   return (
 <div>
-    <section className={styles.Hero}>
+    <section className={styles.Hero} id='hero'>
 
         {/* first part */}
 
@@ -76,7 +76,6 @@ sr.reveal(".left", { interval: 200 });
         <div 
         className={styles.hero_container}
         style={ison ? { background: "url('./BULB.png') no-repeat center center/cover" } : { background: "" }}
-        id='hero'
         >
             <div className={styles.bulb}>
 

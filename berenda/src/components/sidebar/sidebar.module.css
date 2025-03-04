@@ -9,6 +9,7 @@
     overflow-y: auto;
     z-index: 10;
   }
+
 .Navbar{
     display: flex;
     flex-direction: column;
@@ -22,6 +23,15 @@
     text-decoration: none;
     color: white;
     font-size: 3rem;
+    margin-left: 20px;
+    line-height: 1.5;
+    transition: 0.3s;
+}
+.on{
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    transform: scaleX(5); 
     margin-left: 20px;
     line-height: 1.5;
     transition: 0.3s;
