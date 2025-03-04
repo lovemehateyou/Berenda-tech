@@ -23,11 +23,11 @@ useEffect(() => {
 
     tl.to(span1.current, {
         clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", 
-        duration: 0.5,
+        duration: 0.3,
         })
         .to(span2.current, {
         clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-        duration: 0.5,
+        duration: 0.3,
         })
         .to(span3.current, {
         clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
