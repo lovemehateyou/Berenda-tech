@@ -44,7 +44,7 @@ const sr = ScrollReveal({
     distance: "200px",
     duration: 2500,
     reset: false,
-    delay: 400,
+    delay: 100,
   });
 
 sr.reveal(".left", { interval: 200 });
@@ -53,7 +53,7 @@ sr.reveal(".left", { interval: 200 });
 
 
   return (
-<div>
+<div className={styles.container}>
     <section className={styles.Hero} id='hero'>
 
         {/* first part */}
@@ -114,24 +114,6 @@ sr.reveal(".left", { interval: 200 });
                 </div>
 
                 <div 
-                className={styles.switch}
-                style={{
-                    transition: 'transform 0.5s ease-in-out',
-                    transform: ison ? 'translateY(210px)' : 'translateY(0px)', 
-                    zIndex: ison ? 100 : 0,
-                  }}
-                >
-                    <Switch 
-                    onChange={()=>{
-                    seton((prev) => !prev)
-                    }}
-                    className={`custom-switch ${ison ? "checked" : ""}`}
-                    />
-
-                </div>
-
-
-                <div 
                 className= {styles.bulb_img}
                 style={{
                     visibility: ison ? "visible" : "hidden",
@@ -142,6 +124,23 @@ sr.reveal(".left", { interval: 200 });
                     <h2>EUREKA!</h2> 
                 </div>
             </div>
+
+             <div 
+                className={styles.switch}
+                style={{
+                    transition: 'transform 0.5s ease-in-out',
+                    transform: ison ? 'translateY(220px)' : 'translateY(0px)', 
+                    zIndex: ison ? 100 : 10,
+                  }}
+                >
+                    <Switch 
+                    onChange={()=>{
+                    seton((prev) => !prev)
+                    }}
+                    className={`custom-switch ${ison ? "checked" : ""}`}
+                    />
+
+                </div>
 
             
 

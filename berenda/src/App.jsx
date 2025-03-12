@@ -11,8 +11,9 @@ import About from './pages/About.jsx'
 import Contact from './pages/ContactMe.jsx' 
 
 
-import Footer from './components/Footer.jsx' 
+
 */
+import Footer from './components/Footer/footer.jsx' 
 import './App.css'
 
 function App() {
@@ -33,7 +34,7 @@ const [ison,seton] = useState(false)
       </Routes>
       </div>
     </div>
-       {/* <Footer /> */}
+    <Footer />
    </Router> 
       
     </>

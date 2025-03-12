@@ -1,11 +1,9 @@
 .app-container {
-    display: flex;
-    height: 100vh; /* Full viewport height */
+    display: flex;    
   }
 
 .main-content {
     flex: 1;
-    
   }
 html {
     scroll-behavior: smooth;
