@@ -36,9 +36,8 @@ export default function Sidebar({ison}) {
        <nav className={styles.Navbar}>
         <a href="#hero" className={activeSection === "hero" ? styles.on : styles.sidelink}>.</a>
         <a href="#about" className={activeSection === "about" ? styles.on : styles.sidelink}>.</a>
-        <a href="#" className={activeSection === "values" ? styles.on : styles.sidelink}>.</a>
-        <a href="#" className={activeSection === "" ? styles.on : styles.sidelink}>.</a>
-        <a href="#" className={activeSection === "" ? styles.on : styles.sidelink}>.</a>
+        <a href="#values" className={activeSection === "values" ? styles.on : styles.sidelink}>.</a>
+        <a href="#footer" className={activeSection === "footer" ? styles.on : styles.sidelink}>.</a>
       </nav>
     </div>
   );

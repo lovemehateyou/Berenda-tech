@@ -34,7 +34,7 @@ const [ison,seton] = useState(false)
       </Routes>
       </div>
     </div>
-    <Footer />
+    <Footer ison={ison} />
    </Router> 
       
     </>

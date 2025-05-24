@@ -8,10 +8,16 @@ import berenda from '../../assets/Footer/berenda_web.png'
 import phone from '../../assets/Footer/phone icon.png'
 
 
-export default function Footer() {
+export default function Footer({ison}) {
 
   return (
-    <div className="content">
+    <div 
+    className="content" 
+    id='footer'
+    style={{
+        display: ison ? 'flex' : 'none',
+      }}
+    >
 
         <div className="text">
             <p>Thinking Design,<br/><span>Think Us</span>.</p>
